@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#c7ecee"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
+
 
     <fragment
         android:id="@+id/nav_host_fragment_content_main"
@@ -17,4 +19,83 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/sliderLayout"
+        android:orientation="vertical"
+        android:layout_height="200dp">
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:background="#ECF0F1"
+            android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/sliderLayout"
+        android:id="@+id/menu"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/satilik_ilanlar"
+                android:drawableTop="@drawable/satilik"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="#4387B5"
+                android:textStyle="bold"
+                android:background="#D3623B"
+                android:text="Satılık İlanlar"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:drawableTop="@drawable/kiralik"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="#4387B5"
+                android:textStyle="bold"
+                android:background="#C9C7AF"
+                android:text="Kiralık İlanlar"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:drawableTop="@drawable/iletisim"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="#4387B5"
+                android:textStyle="bold"
+                android:background="#C9C7AF"
+                android:text="İletişim Bilgileri"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:drawableTop="@drawable/duyuru"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="#4387B5"
+                android:background="#C9C7AF"
+                android:textStyle="bold"
+                android:text="Duyurular"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
