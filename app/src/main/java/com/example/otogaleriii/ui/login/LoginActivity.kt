@@ -107,6 +107,7 @@ class LoginActivity : AppCompatActivity() {
             "$welcome $displayName",
             Toast.LENGTH_LONG
         ).show()
+        
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
@@ -127,4 +128,7 @@ fun EditText.afterTextChanged(afterTextChanged: (String) -> Unit) {
 
         override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {}
     })
+
+
+
 }
