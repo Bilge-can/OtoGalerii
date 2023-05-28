@@ -7,14 +7,27 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="Ekle" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="Galeri"/>
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
     </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/month_navigation_next"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Share"/>
+            <item
+                android:id="@+id/month_navigation_bar"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Send"/>
+        </menu>
+    </item>
 </menu>
