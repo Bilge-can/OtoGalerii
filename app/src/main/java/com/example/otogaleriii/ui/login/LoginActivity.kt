@@ -12,9 +12,12 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.Toast
+import com.example.otogaleriii.MainActivity
 import com.example.otogaleriii.databinding.ActivityLoginBinding
 
 import com.example.otogaleriii.R
+
+import android.content.Intent
 
 class LoginActivity : AppCompatActivity() {
 
@@ -31,6 +34,7 @@ class LoginActivity : AppCompatActivity() {
         val password = binding.password
         val login = binding.login
         val loading = binding.loading
+
 
         loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
@@ -93,7 +97,12 @@ class LoginActivity : AppCompatActivity() {
 
             login.setOnClickListener {
                 loading.visibility = View.VISIBLE
-                loginViewModel.login(username.text.toString(), password.text.toString())
+               // loginViewModel.login("bilge@gmail.com".text.toString(), "bilgee".text.toString())
+                loginViewModel.login("bilge@gmail.com", username.text.toString())
+                loginViewModel.login("bilgee", password.text.toString())
+
+
+
             }
         }
     }
@@ -107,7 +116,11 @@ class LoginActivity : AppCompatActivity() {
             "$welcome $displayName",
             Toast.LENGTH_LONG
         ).show()
-        
+
+        val intent = Intent(this@LoginActivity, MainActivity::class.java)
+        startActivity(intent)
+        finish()
+
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
