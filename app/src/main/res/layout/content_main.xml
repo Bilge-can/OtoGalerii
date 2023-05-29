@@ -50,7 +50,7 @@
                 android:paddingBottom="10dp"
                 android:textColor="#4387B5"
                 android:textStyle="bold"
-                android:background="#D3623B"
+                android:background="@drawable/menu_buton_back"
                 android:text="Satılık İlanlar"
                 android:layout_height="wrap_content"/>
 
@@ -62,7 +62,7 @@
                 android:paddingBottom="10dp"
                 android:textColor="#4387B5"
                 android:textStyle="bold"
-                android:background="#C9C7AF"
+                android:background="@drawable/menu_buton_back"
                 android:text="Kiralık İlanlar"
                 android:layout_height="wrap_content"/>
 
@@ -80,7 +80,7 @@
                 android:paddingBottom="10dp"
                 android:textColor="#4387B5"
                 android:textStyle="bold"
-                android:background="#C9C7AF"
+                android:background="@drawable/menu_buton_back"
                 android:text="İletişim Bilgileri"
                 android:layout_height="wrap_content"/>
 
@@ -91,7 +91,7 @@
                 android:layout_margin="5dp"
                 android:paddingBottom="10dp"
                 android:textColor="#4387B5"
-                android:background="#C9C7AF"
+                android:background="@drawable/menu_buton_back"
                 android:textStyle="bold"
                 android:text="Duyurular"
                 android:layout_height="wrap_content"/>
