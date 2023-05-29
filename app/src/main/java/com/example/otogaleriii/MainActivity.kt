@@ -12,11 +12,19 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.otogaleriii.databinding.ActivityMainBinding
+import com.example.otogaleriii.ui.login.LoginActivity
+
+import android.view.MenuItem
+import android.content.Intent
+
+import android.util.Log
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +57,23 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.main, menu)
         return true
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.nav_slideshow -> redirectToLoginScreen()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+    override fun onBackPressed() {
+        // Geri tuşu olayını burada dinleyin
+        redirectToLoginScreen()
+    }
+    private fun redirectToLoginScreen() {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+
+    }
+
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
