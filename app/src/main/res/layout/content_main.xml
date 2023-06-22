@@ -53,7 +53,7 @@
                 android:textStyle="bold"
                 android:padding="8dp"
                 android:background="@drawable/menu_buton_back"
-                android:text="Satılık İlanlar" />
+                android:text="İlanlar" />
 
             <Button
                 android:layout_width="0dp"
@@ -66,7 +66,8 @@
                 android:textStyle="bold"
                 android:padding="8dp"
                 android:background="@drawable/menu_buton_back"
-                android:text="Kiralık İlanlar" />
+                android:id="@+id/ilanVerButton"
+                android:text="İlan Ver" />
 
             <Button
                 android:layout_width="0dp"

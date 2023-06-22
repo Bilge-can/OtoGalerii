@@ -46,7 +46,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:id="@+id/adresBilgisiButon"
+        android:id="@+id/adresBilgisiButton"
         android:background="@drawable/menu_buton_back"/>
 
 </LinearLayout>

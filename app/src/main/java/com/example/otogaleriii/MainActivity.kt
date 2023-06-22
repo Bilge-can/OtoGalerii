@@ -18,6 +18,8 @@ import android.view.MenuItem
 import android.content.Intent
 
 import android.util.Log
+import android.widget.Button
+import androidx.appcompat.widget.ButtonBarLayout
 
 
 class MainActivity : AppCompatActivity() {
@@ -41,6 +43,9 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
+       val ilanVerButton : Button = findViewById(R.id.ilanVerButton)
+
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
@@ -50,6 +55,14 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+            ilanVerButton.setOnClickListener {
+            // İlan verme işlemlerini burada gerçekleştir
+            // ...
+
+            // İstenilen sayfayı açmak için örnek olarak:
+            openIlanBilgileriSayfasi()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -64,6 +77,13 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+
+    private fun openIlanBilgileriSayfasi() {
+        val intent = Intent(this, IlanBilgileri::class.java)
+        startActivity(intent)
+    }
+
     override fun onBackPressed() {
         // Geri tuşu
         redirectToLoginScreen()

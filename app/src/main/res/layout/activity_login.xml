@@ -18,6 +18,16 @@
         android:background="@drawable/logo"
         tools:layout_editor_absoluteX="-14dp"
         tools:layout_editor_absoluteY="-14dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Araç Alım Satım"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center" />
      
     <EditText
         android:id="@+id/username"

@@ -54,12 +54,6 @@
         android:id="@+id/kmBilgiEditText"
         android:hint="Araç Kilometresini Giriniz"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="#203040"
-        android:id="@+id/yakitBilgiEditText"
-        android:hint="Araç Yakıt Türünü Giriniz"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,7 +61,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:id="@+id/aracBilgisiButon"
+        android:id="@+id/aracBilgisiButton"
         android:background="@drawable/menu_buton_back"/>
 
 </LinearLayout>
