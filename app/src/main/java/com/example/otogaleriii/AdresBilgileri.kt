@@ -10,6 +10,7 @@ import android.widget.EditText
 class AdresBilgileri : AppCompatActivity() {
 
     private lateinit var adresBilgisiButton: Button
+    private lateinit var adresBilgisiButtonGeri: Button
     private lateinit var sehirBilgiEditText: EditText
     private lateinit var ilceBilgiEditText: EditText
     private lateinit var mahalleBilgiEditText: EditText
@@ -28,6 +29,15 @@ class AdresBilgileri : AppCompatActivity() {
         adresBilgisiButton.setOnClickListener {
             val intent = Intent(this, AracBilgileri::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.anim_in,R.anim.anim_out)
+            finish()
+        }
+        adresBilgisiButtonGeri = findViewById(R.id.adresBilgisiButtonGeri)
+        adresBilgisiButtonGeri.setOnClickListener {
+            val intent = Intent(this, IlanTuru::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.anim_in_ters,R.anim.anim_out_ters)
+            finish()
         }
     }
 }

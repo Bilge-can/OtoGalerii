@@ -9,6 +9,7 @@ import android.widget.EditText
 class Yakit : AppCompatActivity() {
 
     private lateinit var yakitTüketimBilgisiButton: Button
+    private lateinit var yakitTüketimBilgisiButtonGeri: Button
     private lateinit var yakitTipiBilgiEditText: EditText
     private lateinit var ortalamaYakitBilgiEditText: EditText
     private lateinit var depoHacmiBilgiEditText: EditText
@@ -26,6 +27,15 @@ class Yakit : AppCompatActivity() {
         yakitTüketimBilgisiButton.setOnClickListener {
             val intent = Intent(this, IlanResimler::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.anim_in,R.anim.anim_out)
+            finish()
+        }
+        yakitTüketimBilgisiButtonGeri = findViewById(R.id.yakitTüketimBilgisiButtonGeri)
+        yakitTüketimBilgisiButtonGeri.setOnClickListener {
+            val intent = Intent(this, MotorPerformans::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.anim_in_ters,R.anim.anim_out_ters)
+            finish()
         }
     }
 }

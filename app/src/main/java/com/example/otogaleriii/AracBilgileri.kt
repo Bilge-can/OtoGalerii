@@ -9,6 +9,7 @@ import android.widget.EditText
 class AracBilgileri : AppCompatActivity() {
 
     private lateinit var aracBilgisiButton: Button
+    private lateinit var aracBilgisiButtonGeri: Button
     private lateinit var markaBilgiEditText: EditText
     private lateinit var seriBilgiEditText: EditText
     private lateinit var modelBilgiEditText: EditText
@@ -30,6 +31,16 @@ class AracBilgileri : AppCompatActivity() {
         aracBilgisiButton.setOnClickListener {
             val intent = Intent(this, MotorPerformans::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.anim_in,R.anim.anim_out)
+            finish()
+        }
+
+        aracBilgisiButtonGeri = findViewById(R.id.aracBilgisiButtonGeri)
+        aracBilgisiButtonGeri.setOnClickListener {
+            val intent = Intent(this, AdresBilgileri::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.anim_in_ters,R.anim.anim_out_ters)
+            finish()
         }
 }
 }

@@ -82,6 +82,7 @@ class MainActivity : AppCompatActivity() {
     private fun openIlanBilgileriSayfasi() {
         val intent = Intent(this, IlanBilgileri::class.java)
         startActivity(intent)
+        overridePendingTransition(R.anim.anim_in,R.anim.anim_out)
     }
 
     override fun onBackPressed() {
