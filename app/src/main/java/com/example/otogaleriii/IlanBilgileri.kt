@@ -27,7 +27,7 @@ class IlanBilgileri : AppCompatActivity() {
         ilanAciklamaEditText.setText(IlanVerPojo.getAciklama())
         ilanBaslikEditText.setText(IlanVerPojo.getBaslik())
         ilanBilgiButton.setOnClickListener {
-            if (ilanAciklamaEditText.getText().toString() != null && ilanBaslikEditText.getText().toString() != null) {
+            if (!ilanAciklamaEditText.getText().toString().equals("") && !ilanBaslikEditText.getText().toString().equals("")) {
                 IlanVerPojo.setAciklama(ilanAciklamaEditText.getText().toString())
                 IlanVerPojo.setBaslik(ilanBaslikEditText.getText().toString())
                 val intent = Intent(this, IlanTuru::class.java)
