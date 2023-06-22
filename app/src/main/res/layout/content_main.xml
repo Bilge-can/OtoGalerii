@@ -43,6 +43,7 @@
 
             <Button
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:id="@+id/satilik_ilanlar"
                 android:drawableTop="@drawable/satilik"
                 android:layout_weight="1"
@@ -50,21 +51,37 @@
                 android:paddingBottom="10dp"
                 android:textColor="#4387B5"
                 android:textStyle="bold"
+                android:padding="8dp"
                 android:background="@drawable/menu_buton_back"
-                android:text="Satılık İlanlar"
-                android:layout_height="wrap_content"/>
+                android:text="Satılık İlanlar" />
 
             <Button
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:drawableTop="@drawable/kiralik"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 android:paddingBottom="10dp"
                 android:textColor="#4387B5"
                 android:textStyle="bold"
+                android:padding="8dp"
                 android:background="@drawable/menu_buton_back"
-                android:text="Kiralık İlanlar"
-                android:layout_height="wrap_content"/>
+                android:text="Kiralık İlanlar" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/satilik"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="#4387B5"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="@drawable/menu_buton_back"
+                android:text="Favori İlanlar" />
+
+
 
         </LinearLayout>
         <LinearLayout
@@ -74,18 +91,20 @@
 
             <Button
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:drawableTop="@drawable/iletisim"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 android:paddingBottom="10dp"
                 android:textColor="#4387B5"
                 android:textStyle="bold"
+                android:padding="8dp"
                 android:background="@drawable/menu_buton_back"
-                android:text="İletişim Bilgileri"
-                android:layout_height="wrap_content"/>
+                android:text="İletişim Bilgileri" />
 
             <Button
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:drawableTop="@drawable/duyuru"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
@@ -93,8 +112,23 @@
                 android:textColor="#4387B5"
                 android:background="@drawable/menu_buton_back"
                 android:textStyle="bold"
-                android:text="Duyurular"
-                android:layout_height="wrap_content"/>
+                android:padding="8dp"
+                android:text="İlanlarım" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/mesaj"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="#4387B5"
+                android:background="@drawable/menu_buton_back"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:text="Mesajlarım" />
+
+
         </LinearLayout>
     </LinearLayout>
 

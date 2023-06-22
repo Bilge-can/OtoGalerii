@@ -97,7 +97,7 @@ class LoginActivity : AppCompatActivity() {
 
             login.setOnClickListener {
                 loading.visibility = View.VISIBLE
-               // loginViewModel.login("bilge@gmail.com".text.toString(), "bilgee".text.toString())
+
                 loginViewModel.login("bilge@gmail.com", username.text.toString())
                 loginViewModel.login("bilgee", password.text.toString())
 
@@ -110,7 +110,7 @@ class LoginActivity : AppCompatActivity() {
     private fun updateUiWithUser(model: LoggedInUserView) {
         val welcome = getString(R.string.welcome)
         val displayName = model.displayName
-        // TODO : initiate successful logged in experience
+
         Toast.makeText(
             applicationContext,
             "$welcome $displayName",

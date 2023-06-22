@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
     override fun onBackPressed() {
-        // Geri tuşu olayını burada dinleyin
+        // Geri tuşu
         redirectToLoginScreen()
     }
     private fun redirectToLoginScreen() {
