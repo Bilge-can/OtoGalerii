@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#ffeaa7"
     android:orientation="vertical"
-    tools:context=".IlanTuru">
+    tools:context=".IlanResimler">
 
     <TextView
         android:layout_width="match_parent"
@@ -17,29 +17,41 @@
         android:layout_marginTop="30dp"
         android:textStyle="bold"
         android:gravity="center"
-        android:text="İlan Türü Bilgilerini Giriniz"/>
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:id="@+id/ilanturuSpinner"
-        android:layout_height="wrap_content"
-
-></Spinner>
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:id="@+id/kimdenSpinner"
-        android:layout_height="wrap_content"
-
-        ></Spinner>
+        android:text="İlan Resimlerini Seçin"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="İleri"
+        android:text="Resim Seç"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:id="@+id/ilanTuruButon"
+        android:id="@+id/resimSecButon"
         android:background="@drawable/menu_buton_back"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/secilenIlanResmiImageView"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resimi Ekle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/resimEkleButon"
+        android:background="@drawable/menu_buton_back"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İlanı Yayınla"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/ilanYayınlaButon"
+        android:background="@drawable/menu_buton_back"/>
+
 </LinearLayout>

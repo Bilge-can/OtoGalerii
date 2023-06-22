@@ -13,6 +13,15 @@
         android:theme="@style/Theme.OtoGaleriii"
         tools:targetApi="31">
         <activity
+            android:name=".IlanResimler"
+            android:exported="false" />
+        <activity
+            android:name=".Yakit"
+            android:exported="false" />
+        <activity
+            android:name=".MotorPerformans"
+            android:exported="false" />
+        <activity
             android:name=".IlanTuru"
             android:exported="false" />
         <activity
